@@ -577,7 +577,7 @@
 </div>
 
 <script>
-    let selectedPlan = { id: '', name: '', price: 0 };
+    let selectedPlan = { id: '', name: '';
     let detectedWhatsApp = '';
 
     // Função para detectar o número do celular
@@ -607,10 +607,10 @@
     }
 
     function selectPlan(planId, planName, price) {
-        selectedPlan = { id: planId, name: planName, price: price };
+        selectedPlan = { id: planId, name: planName };
         
         document.getElementById('selectedPlanName').innerText = planName;
-        document.getElementById('selectedPlanPrice').innerText = price;
+        document.getElementById('selectedPlanPrice').innerText = ;
         
         // Preencher campos se já tiver dados
         const savedName = localStorage.getItem('userName');
